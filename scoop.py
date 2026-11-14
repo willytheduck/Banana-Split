@@ -29,6 +29,7 @@ class ScoopField:
         self.scoops = []
         self.caught = []
         self.timer = 0.0
+        self.elapsed = 0.0
         self.done = False
         self.complete = False
 
@@ -50,6 +51,7 @@ class ScoopField:
     def update(self,dt):
         if self.done:
             return
+        self.elapsed += dt
         self.timer += dt
         if self.timer >= self.cfg["interval"]:
             self.timer = 0.0

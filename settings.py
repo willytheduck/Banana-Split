@@ -23,7 +23,7 @@ DIFFS = {
 
 FONT_FILE=None
 
-DEBUG = True  # for the red catch box so i can tune
+DEBUG = False  # for the red catch box so i can tune
 CATCH_INSET = 0.05  # fraction trimmed off each side
 CATCH_HEIGHT = 0.5  # catch box height as a fraction of the catch
 
@@ -40,7 +40,7 @@ TXT_COLOR = (40, 30, 40)
 
 VS_BOT = True
 BOT = {
-    "easy": {"reaction": 0.5, "error": 640, "speed": 0.75, "avoid_gross": False},
+    "easy": {"reaction": 0.5, "error": 64, "speed": 0.75, "avoid_gross": False},
     "normal": {"reaction": 0.2, "error": 18, "speed": 0.90, "avoid_gross": False},
     "hard": {"reaction": 0.10, "error": 12, "speed": 1.0, "avoid_gross": True}
 }
