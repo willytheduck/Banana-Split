@@ -10,7 +10,8 @@ class Banana:
         self.img = img
         self.speed = BANAN_SPEED
         self.rect = img.get_rect()
-        self.rect.centerx = panel.bottom - 20
+        self.rect.centerx = panel.centerx
+        self.rect.bottom = panel.bottom - 20
         self.x = float(self.rect.x)
 
     def update(self, keys, dt):

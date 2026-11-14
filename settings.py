@@ -14,8 +14,14 @@ BANAN_SPEED = 500  # px/sec
 P1_COLOR = (255, 214, 64)
 P2_COLOR = (255, 170, 64)
 
-SCOOP_SPEED = 220  # px/sec
-SPWN_INTER = 0.9  # secs between scoops
+DIFF = "normal"
+DIFFS = {
+    "easy": {"speed": 160, "interval": 1.1, "gross": 0.0, "target": 45, "lives": 5},
+    "normal": {"speed": 220, "interval": 0.8, "gross": 0.01, "target": 105, "lives":4},
+    "hard": {"speed": 320, "interval": 0.55, "gross":0.10, "target": 210, "lives": 3},
+}
+
+FONT_FILE=None
 
 DEBUG = True  # for the red catch box so i can tune
 CATCH_INSET = 0.15  # fraction trimmed off each side
