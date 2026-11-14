@@ -16,9 +16,9 @@ P2_COLOR = (255, 170, 64)
 
 DIFF = "hard"
 DIFFS = {
-    "easy": {"speed": 160, "interval": 1.1, "gross": 0.0, "target": 45, "lives": 5},
-    "normal": {"speed": 220, "interval": 0.8, "gross": 0.01, "target": 105, "lives":4},
-    "hard": {"speed": 320, "interval": 0.6, "gross":0.10, "target": 210, "lives": 3},
+    "easy": {"speed": 140, "interval": 1.2, "gross": 0.0, "target": 28, "lives": 5},
+    "normal": {"speed": 200, "interval": 0.9, "gross": 0.01, "target": 55, "lives":4},
+    "hard": {"speed": 260, "interval": 0.75, "gross":0.10, "target": 105, "lives": 3},
 }
 
 FONT_FILE=None
@@ -40,7 +40,7 @@ TXT_COLOR = (40, 30, 40)
 
 VS_BOT = True
 BOT = {
-    "easy": {"reaction": 0.45, "error": 60, "speed": 0.6, "avoid_gross": False},
-    "normal": {"reaction": 0.25, "error": 30, "speed": 0.8, "avoid_gross": False},
-    "hard": {"reaction": 0.01, "error": 12, "speed": 1.0, "avoid_gross": True}
+    "easy": {"reaction": 0.5, "error": 640, "speed": 0.75, "avoid_gross": False},
+    "normal": {"reaction": 0.2, "error": 18, "speed": 0.90, "avoid_gross": False},
+    "hard": {"reaction": 0.10, "error": 12, "speed": 1.0, "avoid_gross": True}
 }
