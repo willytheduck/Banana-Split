@@ -13,6 +13,10 @@ class Banana:
         self.rect.bottom = panel.bottom - 20
         self.x = float(self.rect.x)
 
+    @property
+    def catch_rect(self):
+        return pygame.Rect(self.rect.x, self.rect.y, self.rect.w, self.rect.h//3)
+        
     def update(self,keys,dt):
         direction = 0
         if keys[self.left_key]:
